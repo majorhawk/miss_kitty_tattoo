@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------
+    06 About Section
+*/
+.about_area > .container {
+    margin-bottom: -6px;
+}
+.about_content {
+    > .info {
+        margin-bottom: 25px;
+        > img {
+            border: 8px solid #87D5C6;
+            border-radius: 50%;
+            height: 150px;
+            margin-bottom: 22px;
+            margin-top: -110px;
+            position: relative;
+            width: 150px;
+            z-index: 5;
+        }
+        > h3 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        > h5 {
+            font-size: 15px;
+            letter-spacing: 0.1em;
+        }
+    }
+}
+.tag_list {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+    > li {
+        background-color: rgba(30, 187, 163, 0.04);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: #333;
+        display: inline-block;
+        font-weight: normal;
+        margin: 6px 4px;
+        padding: 7px 15px;
+        text-transform: capitalize;
+        font-size: 14px;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+            color: #fff;
+            background-color: #1EBBA3;
+            border: 1px solid #1EBBA3;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .about_content > .info {
+        > img {
+            border-width: 5px;
+            height: 120px;
+            width: 120px;
+        }
+        > h3 {
+            font-size: 24px;
+        }
+        > h5 {
+            font-size: 14px;
+            letter-spacing: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .about_content > .info {
+        > img {
+            height: 100px;
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        > h3 {
+            font-size: 20px;
+            margin-bottom: 7px;
+        }
+    }
+    .about_content > .info > h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .about_content > .info > h5 {
+        font-size: 13px;
+    }
+    .tag_list > li {
+        font-size: 12px;
+    }
+}
+    

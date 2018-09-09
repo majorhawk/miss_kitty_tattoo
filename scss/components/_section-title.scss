@@ -1,0 +1,116 @@
+/*------------------------------------------------------------------
+    03 Section Title
+*/
+
+
+.section_title {
+    margin-bottom: 70px;
+    font-weight: 200;
+    > .title { 
+        font-size: 46px;
+        font-weight: lighter;
+        position: relative;
+        margin: -2px 0 0;
+        padding-bottom: 20px;
+        &:before,
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 50%;
+            height: 1px;
+        }
+        &:before {
+            background: linear-gradient(to right,#fff,#d8d8d8,#d8d8d8, #fff);
+            margin-left: -75px;
+            width: 150px;
+        }
+        &:after {
+            background-color: #1EBBA3;
+            margin-left: -20px;
+            width: 40px;
+            z-index: 1;
+        }
+        > span {
+            font-weight: 700;
+        }
+    }
+}
+.section_title,
+.home_text_block {
+    > h3 {
+        color: #1ebba3;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-transform: capitalize;
+        > span {
+            padding: 3px 35px;
+            position: relative;
+            display: inline-block;
+            &:before,
+            &:after {
+                background-color: #1EBBA3;
+                border-radius: 50%;
+                content: "";
+                height: 6px;
+                margin-top: -3px;
+                position: absolute;
+                top: 50%;
+                width: 6px;
+                opacity: 0.25;
+            }
+            &:before {
+                left: 20px;
+            }
+            &:after {
+                right: 20px;
+            }
+        }
+    }
+}
+.home_text_block > h3 > span {
+     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)) repeat scroll 0 0;
+}
+.section_title > h3 > span {
+     background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)) repeat scroll 0 0;
+}
+
+.headline {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+
+
+@media only screen and (max-width: 991px) {
+    .section_title {
+        margin-bottom: 60px;
+        > h3 {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+        > .title {
+            font-size: 38px;
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    .section_title {
+        > h3 {
+            font-size: 14px;
+        }
+        > .title {
+            font-size: 30px;
+            padding-bottom: 17px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .section_title > .title {
+        font-size: 26px;
+    }
+}

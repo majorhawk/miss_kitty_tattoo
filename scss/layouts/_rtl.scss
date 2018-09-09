@@ -1,0 +1,157 @@
+/*------------------------------------------------------------------
+    13 RTL Css
+*/
+
+html[dir="rtl"] {
+    #navbar-main,
+    div[class^=col-],
+    p {
+        direction:rtl;
+    }
+    
+    .skill_content,
+    .about_info,
+    .single_skill h3,
+    .portfolio_work_nav,
+    .single_contact_info .info,
+    .headline,
+    .slingle_client > .client_body,
+    .single_work .work_info,
+    .entry_post .post_thumb > .entry_date,
+    .single_contact_info > span {
+        text-align: right;
+    }
+    .social_share_area .share_btn .social_share {
+        text-align: left;
+    }
+    
+    div[class^=col-],
+    .about_info .info_list > li > strong,
+    .about_info .info_list > li,
+    .single_contact_info > .icon,
+    .entry_post .entry_footer > .entry_meta,
+    .single_contact_info > span {
+        float: right;
+    }
+    
+    .testimonial_carousel.owl-carousel .owl-stage,
+    .social_share_area {
+        float: left !important;
+    }
+    
+    .social_share_area .share_btn .social_share {
+        margin-left: 39px;
+        margin-right: 0;
+    }
+    .site_logo,
+    .single_contact_info > .icon,
+    .entry_post .entry_footer > .entry_meta > span {
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    .single_contact_info > span {
+        margin-left: 25px;
+        margin-right: 0;
+    }
+    
+    .cd-headline.clip .cd-words-wrapper::after,
+    .social_share_area .share_btn .social_share {
+        left: 0;
+        right: auto;
+    }
+    .single_skill h3 > span {
+        left: auto;
+        right: 30px;
+    }
+    .about_thumb {
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .about_info .info_list,
+    .portfolio_work_nav,
+    .footer_social_share {
+        padding-right: 0;
+    }
+    #section_scroller_button {
+        left: 20px;
+        right: auto;
+    }
+    .single_skill .progress_bar > span {
+        left: auto;
+        right: 0;
+    }
+    .single_skill .progress_bar > span > strong {
+        left: -15px;
+        right: auto;
+    }
+    .portfolio_work_nav > li {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+    .pr-15 {
+        padding-right: 0px !important;
+        padding-left: 15px !important;
+    }
+    .contact_form_area .contact_form {
+        padding-left: 0px;
+        padding-right: 30px;
+    }
+    .slingle_client .client_header {
+        left: auto;
+        right: 70px;
+    }
+    .work_hover_mask > span {
+        right: auto;
+        left: 30px;
+    }
+    .single_contact_info > span {
+        border-left: 1px solid #d1d1d1;
+        border-right: 0px solid;
+    }
+    .entry_post .entry_footer > .entry_meta .entry_user > img {
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    html[dir="rtl"] {
+        .about_thumb {
+            margin-left: 5px;
+        }
+        .pr-15 {
+            padding-left: 0px !important;
+        }
+        .navigation_area > .mainmenu_area .mainmenu {
+            text-align: right;
+            > li > a::before {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    html[dir="rtl"] {
+        .contact_form_area .contact_form {
+            padding-right: 0px;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    html[dir="rtl"] .single_contact_info > span {
+        margin-left: 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    html[dir="rtl"] {
+        .slingle_client .client_header {
+            left: auto;
+            right: 25px;
+        }
+        .portfolio_work_nav > li {
+            margin-left: 20px;
+        }
+    }
+}

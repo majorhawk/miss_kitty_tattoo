@@ -1,0 +1,249 @@
+/*------------------------------------------------------------------
+    11 Site Layout
+*/
+
+/* [11.1 Skill Area] */
+
+.skill_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -15px -45px;
+    > div {
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 calc(50% - 30px);
+                flex: 1 1 calc(50% - 30px);
+        margin: 0 15px;
+    }
+}
+.single_skill {
+    padding-bottom: 25px;
+    h3 {
+        color: #232323;
+        font-size: 15px;
+        font-weight: 500;
+        margin: 0 0 12px;
+        position: relative;
+        text-transform: capitalize;
+    }
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
+.single_skill .progress_bar {
+    background: #ccc none repeat scroll 0 0;
+    box-shadow: 0 0 0;
+    height: 3px;
+    margin: 0 0 20px;
+    position: relative;
+    width: 100%;
+    > span {
+        background: #1EBBA3 none repeat scroll 0 0;
+        display: block;
+        height: 100%;
+        width: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        > strong {
+            color: #232323;
+            font-weight: normal;
+            font-size: 14px;
+            position: absolute;
+            right: -15px;
+            top: -31px;
+            &:before {
+                border-color: #1ebba3 transparent transparent;
+                border-style: solid;
+                border-width: 7px 5px;
+                bottom: -12px;
+                content: "";
+                left: 4px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+
+
+/* [11.2 FanFact Area] */
+.fanfact_area {
+    background-attachment: fixed;
+}
+.single-fanfact {
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    > span {
+        display: block;
+        position: relative;
+        margin-bottom: 15px;
+        line-height: 40px;
+        &:before {
+            font-size: 40px;
+        }
+    }
+    .counter {
+        color: inherit;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+    > p {
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}
+
+.contact_area {
+    position: relative;
+}
+.single_contact_info {
+    min-height: 60px;
+    margin-bottom: 45px;
+    > span {
+        border-right: 1px solid #d1d1d1;
+        color: #1ebba3;
+        display: block;
+        float: left;
+        font-size: 36px;
+        height: 60px;
+        line-height: 60px;
+        margin-right: 25px;
+        width: 60px;
+    }
+    > .info {
+        overflow: hidden;
+        padding-top: 8px;
+        > h4 {
+            color: #303030;
+            font-size: 15px;
+            font-weight: 700;
+            margin: 0 0 5px;
+            text-transform: uppercase;
+        }
+        > p {
+            line-height: 1.5em;
+            font-size: 14px;
+        }
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/* [11.3 Contact Form Area] */
+#contact-form {
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+/* [11.5 Different Version Style] */
+#particles-js {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.welcome_video_area {
+    z-index: 0;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .skill_content {
+        margin-bottom: 30px;
+    }
+    .single_contact_info {
+        margin-bottom: 30px;
+    }
+    .fanfact_area > .container {
+        margin-bottom: -50px;
+    }
+    .single-fanfact {
+        margin-bottom: 50px;
+        > span {
+            margin-bottom: 10px;
+        }
+    }
+    .single_contact_info {
+        float: left;
+        width: 50%;
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+    #contact-form {
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .skill_content > h2.headline {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .single-fanfact {
+        .counter {
+            font-size: 34px;
+        }
+        > p {
+            font-size: 16px;
+        }
+    }
+    .contact_form_area {
+        min-height: auto;
+        .contact_form {
+            min-height: auto;
+            padding-left: 0;
+            padding: 80px 0 85px;
+        }
+    }
+    .angle_style_two:after {
+        height: 55px;
+    }
+    .skill_list {
+        margin: 0 -15px -20px;
+        > div {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 calc(100% - 30px);
+                    flex: 1 1 calc(100% - 30px);
+        }
+    }
+    .single_skill {
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .single-fanfact {
+        > span {
+            line-height: 32px;
+            margin-bottom: 5px;
+            &:before {
+                font-size: 32px;
+            }
+        }
+        .counter {
+            font-size: 28px;
+        }
+    }
+    .single_contact_info {
+        > span {
+            font-size: 25px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 20px;
+            width: 45px;
+        }
+        > .info {
+            padding-top: 2px;
+        }
+    }
+}

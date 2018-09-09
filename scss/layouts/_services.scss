@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------
+    07 Services Section
+*/
+
+.services_area > .container {
+    margin-bottom: -30px;
+}
+
+.single_service {
+    background-color: #fff;
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,.16);
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    &:before,
+    &:after {
+        width: 0px;
+        height: 2px;
+        background-color: #1ebba3;
+        position: absolute;
+        content: "";
+        -webkit-transition: linear 0.2s;
+        transition: linear 0.2s;
+    }
+    &:before {
+        top: 0;
+        left: 0;
+    }
+    &:after {
+        bottom: 0;
+        right: 0;
+    }
+    &:hover:before,
+    &:hover:after{
+        width: 60px;
+    }
+    > .icon {
+        background-color: rgba(30,187,163,0.08);
+        border-radius: 50%;
+        height: 65px;
+        line-height: 65px;
+        margin: 0 auto 20px;
+        width: 65px;
+        color: #1ebba3;
+        -webkit-transition: linear 0.2s;
+        transition: linear 0.2s;
+        [class^="flaticon-"]:before {
+            font-size: 26px;
+        }
+    }
+    &:hover > .icon {
+        background-color: rgba(30,187,163,1);
+        color: #fff;
+    }
+    .info > h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 15px;
+    }
+    .info > p {
+        margin-bottom: 0;
+    }
+    &:hover {
+        box-shadow: 0 15px 30px rgba(0,0,0,.2);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .single_service .info > h2 {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .single_service .info > h2 {
+        font-size: 17px;
+    }
+}
